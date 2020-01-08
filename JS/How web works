@@ -1,0 +1,2 @@
+Client -> URL in browser -> Domain Lookup -> sends the Server IP Address to the browser -> Server(NodeJS, DB) -> Response
+Response is usually transferred via HTTP or HTTPS(SSL Encryption).
