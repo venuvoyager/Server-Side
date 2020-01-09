@@ -1,4 +1,0 @@
-Incoming requests -> NodeJs Code + Single JS Thread
-All the requests go to event loop and any heavy weight tasks such as fs related tasks spin up new worker pool which runs on separate threads and
-do the heavy lifting. Whilst the event loops contains the event call backs which were running in worker pool and called once the worker pool
-is done with the tasks. These are handled by NodeJS. Hence NodeJS is non-blocking i/o;

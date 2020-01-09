@@ -1,0 +1,11 @@
+Incoming requests -> NodeJs Code + Single JS Thread
+All the requests go to event loop and any heavy weight tasks such as fs related tasks spin up new worker pool which runs on separate threads and
+do the heavy lifting. Whilst the event loops contains the event call backs which were running in worker pool and called once the worker pool
+is done with the tasks. These are handled by NodeJS. Hence NodeJS is non-blocking i/o;
+
+Event Loop: 
+1) Timers - Keeps nodeJS process running.
+2) Pending Callback - Every execution checks for Timers to execute and executes, Other Pending callBacks and executes (I/O related).
+3) Poll - Enters Poll mode, trying to retrieve new I/O events and executes the callbacks immediately or later point. In poll mode, It can jump to Timers mode if there are any Pending Timers to execute.
+4) Check Mode - Execute setImmediate() callbacks.
+5) Close Callbacks - Execute all close event callbacks.
