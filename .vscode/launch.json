@@ -7,14 +7,15 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "nodemon",
+            "runtimeExecutable": "node",
+            "program": "${workspaceFolder}/Section5/app.js",
+            "restart": true,
+            "console": "externalTerminal",
+            "internalConsoleOptions": "neverOpen",
             "skipFiles": [
                 "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder/Section2/app.js}",
-            "restart": true,
-            "runtimeExecutable": "nodemon",
-            "console": "integratedTerminal"
+            ]
         }
     ]
 }
