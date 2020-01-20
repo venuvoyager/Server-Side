@@ -1,58 +1,23 @@
-/* .form-product {
-    width: 20rem;
-    max-width: 90%;
-    margin: auto;
-}
-
 .form-control {
     margin: 1rem 0;
-}
-
-.form-control label,
-.form-control input {
-    display: block;
-    width: 100%;
-}
-
-.form-control input {
-    border: 1px solid green;
-    font: inherit;
-    border-radius: 3px;
-}
-
-button {
-    font: inherit;
-    height: 30px;
-    font-size: 14px;
-    border: 1px solid green;
-    border-radius: 3px;
-    background-color: white;
-    color: green;
-}
-
-button:hover {
-    background-color: green;
-    color: white;
-} */
-
-.form-control {
-    margin: 1rem 0;
-}
-
-.form-control label,
-.form-control input {
+  }
+  
+  .form-control label,
+  .form-control input,
+  .form-control textarea {
     display: block;
     width: 100%;
     margin-bottom: 0.25rem;
-}
-
-.form-control input {
+  }
+  
+  .form-control input,
+  .form-control textarea {
     border: 1px solid #a1a1a1;
     font: inherit;
     border-radius: 2px;
-}
-
-.form-control input:focus {
+  }
+  
+  .form-control input:focus,
+  .form-control textarea:focus {
     outline-color: #00695c;
-}
-
+  }
